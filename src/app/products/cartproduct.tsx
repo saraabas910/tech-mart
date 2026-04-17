@@ -4,7 +4,7 @@ import { Minus, Plus, Trash2 } from 'lucide-react'
 import React, { useState } from 'react'
 
 import { Loader2 } from 'lucide-react'
-import { ICartProduct } from '@/interfaces/cart/cartproduct'
+import { ICartProduct } from 'interfaces/cart/cartproduct'
 import { formatPrice } from '@/lib/utils'
 
 export default function Cartproduct({item, removeItem, updateItem}:{item:ICartProduct, removeItem: any, updateItem: any} ) {

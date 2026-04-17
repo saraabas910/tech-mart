@@ -291,12 +291,7 @@ export default function ProductDetail({product}: {product:IProduct}) {
                 </div>
               )}
 
-              {activeTab === 'details' && (
-                <div className="whitespace-pre-wrap text-gray-700 dark:text-gray-300">
-                  {product.details}
-                </div>
-              )}
-
+            
               {activeTab === 'shipping' && (
                 <div className="space-y-4">
                   <div className="flex items-center">

@@ -30,7 +30,7 @@ import { cn } from "@/lib/utils";
 import { useContext, useEffect, useState } from "react"; 
 import { cartContext } from "@/contexts/cartcontext";
 import apiServices from "@/services/api";
-import { ICategory } from "@/interfaces/Icategory";
+import { ICategory } from "interfaces/Icategory";
 import { signOut, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation"
 

@@ -1,13 +1,13 @@
 
-
-import { IProduct, Responsetype } from "@/types"; 
-
+import {IProduct} from 'interfaces/Iproduct'
+import  { Responsetype} from "typess/Responsetype";
+import { count } from "console";
 import { IAddToCartResponse } from "interfaces/cart/addtocartresponse";
 import { IBrand } from "interfaces/Ibrand";
 import { ICategory } from "interfaces/Icategory";
 import { ISubcategory } from "interfaces/Isubcategory";
 import { headers } from "next/dist/server/request/headers";
-import { signinResponse } from "@/types/signinResponse";
+import { signinResponse } from "typess/signinResponse";
       
       
       
@@ -15,15 +15,15 @@ import { signinResponse } from "@/types/signinResponse";
 
   #BASE_URL=process.env.NEXT_PUBLIC_BASE_URL;
   
-  async getProductS():Promise<IProduct[]> {
-
-    const res = await fetch(this.#BASE_URL+"/api/v1/products")
-     const data: Responsetype<IProduct>= await res.json()
-     //console.log("a",data)
-     return data.data
+async getProductS(): Promise<IProduct[]> {
+  const res = await fetch(this.#BASE_URL + "/api/v1/products");
   
- }
 
+  const data: Responsetype<IProduct[]> = await res.json();
+  
+
+  return data.data; 
+}
 
 
  async getProductdetails(id:string):Promise<IProduct> {
@@ -128,7 +128,7 @@ import { signinResponse } from "@/types/signinResponse";
 async getBrands(): Promise<IBrand[]> {
   const res = await fetch(this.#BASE_URL + "/api/v1/brands");
   
-  const data: Responsetype<IBrand> = await res.json();
+  const data: Responsetype<IBrand[]> = await res.json();
   
   //console.log("brandssssssss", data.data);
   
@@ -161,14 +161,15 @@ async getCategories(): Promise<ICategory[]> {
 }
 
 
-  async getallsubcategories():Promise<Responsetype<ISubcategory>> {
 
+async getallsubcategories(): Promise<ISubcategory[]> {
   const res = await fetch(this.#BASE_URL + "/api/v1/subcategories");
   
 
-  const data: { data:ISubcategory[] } = await res.json();
+  const data: { data: ISubcategory[] } = await res.json();
+  
   return data.data;
-  }
+}
 
 
 

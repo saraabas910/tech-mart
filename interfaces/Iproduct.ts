@@ -1,7 +1,7 @@
 import { IBrand } from "./Ibrand";
 import { ICategory } from "./Icategory";
 import {ISubcategory} from "./Isubcategory"
-export interface IProduct {
+export interface IProduct{
   _id: string;
   id: string;
   title: string;
@@ -17,7 +17,6 @@ export interface IProduct {
   brand: IBrand;
   category: ICategory;
   subcategory: ISubcategory[];
-  createdAt: string; // ISO date string
-  updatedAt: string; // ISO date string
-  details :string
+  createdAt: string; 
+  updatedAt: string; 
 }

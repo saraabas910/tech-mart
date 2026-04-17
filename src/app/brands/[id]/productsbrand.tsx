@@ -4,7 +4,7 @@ import { cartContext } from '@/contexts/cartcontext';
 import apiServices from '@/services/api';
 import Link from 'next/link';
 import React, { useContext } from 'react';
-import { IProduct } from '@/interfaces/Iproduct';
+import { IProduct } from 'interfaces/Iproduct'
 import { toast } from 'sonner';
 import { useSession } from 'next-auth/react'; 
 import { Heart } from "lucide-react";

@@ -5,7 +5,7 @@ import { useEffect, useState, useContext } from "react";
 import { formatPrice } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { IAddToCartResponse } from "@/interfaces/cart/addtocartresponse";
+import { IAddToCartResponse } from "interfaces/cart/addtocartresponse";
 import apiServices from "@/services/api";
 import Cartproduct from "../products/cartproduct";
 import { cartContext } from "@/contexts/cartcontext";
