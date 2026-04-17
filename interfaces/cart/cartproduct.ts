@@ -1,6 +1,6 @@
-import { IBrand } from "interfaces/Ibrand"
-import { ICategory } from "interfaces/Icategory"
-import { ISubcategory } from "interfaces/Isubcategory"
+import { IBrand } from "@/interfaces/Ibrand"
+import { ICategory } from "@/interfaces/Icategory"
+import { ISubcategory } from "@/interfaces/Isubcategory"
 
 export interface ICartProduct {
   _id: string

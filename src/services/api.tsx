@@ -1,13 +1,13 @@
 
 
-import  {IProduct, Responsetype} from "@/types";
-import { count } from "console";
+import { IProduct, Responsetype } from "@/types"; 
+
 import { IAddToCartResponse } from "interfaces/cart/addtocartresponse";
 import { IBrand } from "interfaces/Ibrand";
 import { ICategory } from "interfaces/Icategory";
 import { ISubcategory } from "interfaces/Isubcategory";
 import { headers } from "next/dist/server/request/headers";
-import { signinResponse } from "types/signinResponse";
+import { signinResponse } from "@/types/signinResponse";
       
       
       

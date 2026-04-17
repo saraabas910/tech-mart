@@ -19,4 +19,5 @@ export interface IProduct {
   subcategory: ISubcategory[];
   createdAt: string; // ISO date string
   updatedAt: string; // ISO date string
+  details :string
 }
