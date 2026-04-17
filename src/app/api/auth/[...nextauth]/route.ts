@@ -1,7 +1,7 @@
 import apiServices from "@/services/api"
 import NextAuth from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials"
-import { signinResponse } from "@/types/signinResponse";
+import { signinResponse } from "typess/signinResponse";
 
 
 
