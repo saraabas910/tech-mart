@@ -85,13 +85,15 @@ export default function Productsbrand({ brandProducts }: IProps) {
             </div>
 
             <div className="mt-3 space-y-1 px-1">
-              <Link href={"/productdetails/" + product._id} className="text-[10px] font-bold text-main uppercase tracking-widest">
+              <Link href={"/products/" + product._id} className="text-[10px] font-bold text-main uppercase tracking-widest">
                 {product.brand?.name || 'Brand'}
               </Link>
-              
+
+              <Link href={"/products/" + product._id}>
               <h3 className="line-clamp-2 h-9 text-xs font-medium text-gray-700 leading-snug group-hover:text-main transition-colors">
                 {product.title}
               </h3>
+              </Link> 
 
               <div className="flex items-center justify-between pt-2">
                 <span className="text-sm font-bold text-gray-900">
