@@ -16,11 +16,11 @@ export default function WishlistPage() {
 
 
 async function getWishlist() {
-    const token = session?.user?.token; // 1. سحب التوكن
-    if (!token) return; // لو مفيش توكن ميعملش ريكويست
+    const token = session?.user?.token; 
+    if (!token) return;
 
     try {
-      const res = await apiServices.getUserWishlist(token); // 2. بعت التوكن
+      const res = await apiServices.getUserWishlist(token); 
       setWishedProducts(res || []);
       setWishlistCount(res?.length || 0);
     } catch (error) {
@@ -31,7 +31,7 @@ async function getWishlist() {
   }
 
   const handleAddToCart = async (productId: string) => {
-    const token = session?.user?.token; // سحب التوكن
+    const token = session?.user?.token;
     if (!token) {
       toast.error("Please login first");
       return;
